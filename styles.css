@@ -13,22 +13,15 @@ html, body {
   text-decoration: none; }
 
 .container {
-  position: relative;
   background: url(https://i.imgur.com/YjcuGQM.jpg) no-repeat center;
   background-size: cover;
   height: 100vh; }
-  .container .container_cover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
-    padding-top: 25px; }
-    .container .container_cover p {
-      font-size: 25px; }
-    .container .container_cover h1 {
-      font-size: 45px; }
+  .container img {
+    padding: 2em; }
+  .container p {
+    font-size: 25px; }
+  .container h1 {
+    font-size: 45px; }
   .container .countdown {
     font-size: 50px;
     display: -webkit-box;
@@ -55,16 +48,13 @@ html, body {
       font-size: 25px; }
 
 @media (max-width: 650px) {
-  .container .container_cover p {
-    display: none; }
-
-  .container .container_cover h1 {
-    margin: 8px auto 8px auto;
+  .container img {
+    padding: 2em 0 4px 0; }
+  .container h1 {
+    margin: 0 auto 8px auto;
     font-size: 25px; }
-
-  .container .container_cover img {
-    width: 120px;
-    height: 133px; }
+  .container p {
+    display: none; }
 
   .countdown {
     -webkit-box-orient: vertical;
