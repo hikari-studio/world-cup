@@ -1,6 +1,7 @@
 html, body {
   padding: 0;
   margin: 0;
+  width: 100%;
   text-align: center;
   overflow: hidden;
   color: #fff;
@@ -56,11 +57,15 @@ html, body {
 
 @media (max-width: 650px) {
   .container .container_cover p {
-    font-size: 18px;
-    line-height: 1.5; }
+    display: none; }
 
   .container .container_cover h1 {
+    margin: 8px auto 8px auto;
     font-size: 25px; }
+
+  .container .container_cover img {
+    width: 120px;
+    height: 133px; }
 
   .countdown {
     -webkit-box-orient: vertical;
